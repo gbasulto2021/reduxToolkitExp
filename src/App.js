@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Contador from "./components/Contador";
+import CrudApi from "./components/CrudApi";
+import ShoppingCart from "./components/ShoppingCart";
+import TasksList from "./components/TasksList";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CrudApi/>
+      <br />
+      <br />
+      <br />
+      <br />
+      <hr/>
+      <TasksList/>
+      <br />
+      <br />
+      <br />
+      <br />
+      <hr/>
+      <ShoppingCart />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <hr/>
+      <Contador />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
     </div>
   );
 }
